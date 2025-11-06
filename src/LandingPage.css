@@ -1,0 +1,66 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  height: 8em;
+  padding: 1em;
+  margin-top: 2em;
+  will-change: filter;
+  transition: filter 300ms;
+  filter: drop-shadow(0 0 2em #3a5a60 )
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.cardLand {
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.under-text {
+  color: #888;
+}
+
+.cardLand button {
+  margin-top: 1em; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cardLand {
+    padding: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardLand {
+    padding: 0.5em;
+  }
+  
+  .under-text {
+    font-size: 0.9rem;
+  }
+}
+
